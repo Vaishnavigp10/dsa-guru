@@ -1,0 +1,10 @@
+{
+  "experimentalServices": {
+    "dsa-guru-backend": {
+      "type": "web",
+      "root": "backend",
+      "routePrefix": "/",
+      "buildCommand": "./build.sh"
+    }
+  }
+}

@@ -27,7 +27,7 @@ STORAGES = {
 
 # CORS - update with your Vercel domain
 CORS_ALLOWED_ORIGINS = [
-    "https://your-app.vercel.app",
+    "https://dsa-guru.vercel.app",  # Your actual Vercel URL
     "http://localhost:5173",
 ]
 
