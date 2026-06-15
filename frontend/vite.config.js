@@ -50,16 +50,7 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: 'dist',
-    sourcemap: false,
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor:    ['react', 'react-dom', 'react-router-dom'],
-          animation: ['framer-motion'],
-          ui:        ['lucide-react'],
-        }
-      }
-    }
-  }
+  outDir: 'dist',
+  sourcemap: false,
+}
 })
