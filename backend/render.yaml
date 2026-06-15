@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: dsa-guru-backend
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn config.wsgi:application"
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: config.settings.production
+      - key: SECRET_KEY
+        generateValue: true
+      - key: PYTHON_VERSION
+        value: 3.12.0
+      - key: GOOGLE_API_KEY
+        sync: false
+    plan: free
+
+databases:
+  - name: dsa-guru-db
+    plan: free
