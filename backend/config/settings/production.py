@@ -27,10 +27,11 @@ STORAGES = {
 
 # CORS - update with your Vercel domain
 CORS_ALLOWED_ORIGINS = [
-    "https://dsa-guru-hb65vy6lq-vaishnavi-g-p-s-projects.vercel.app",
+    "https://dsa-guru-plum.vercel.app",
     "http://localhost:5173",
 ]
 
+CORS_ALLOW_ALL_ORIGINS = True  # Add this for now
 # Security
 SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
